@@ -4,14 +4,14 @@ import cards_data from "../../assets/cards/Cards_data";
 
 const TitileCards = ({ title, category }) => {
   const cardsRef = useRef();
-  // const handleWheel = (event) => {
-  //   event.preventDefault();
-  //   cardsRef.current.scrollLeft += event.deltaY;
-  // };
+  const handleWheel = (event) => {
+    event.preventDefault();
+    cardsRef.current.scrollLeft += event.deltaY;
+  };
 
-  // useEffect(() => {
-  //   cardsRef.current.addEventListener("wheel", handleWheel);
-  // }, []);
+  useEffect(() => {
+    cardsRef.current.addEventListener("wheel", handleWheel);
+  }, []);
   return (
     <div className="title-cards">
       <h2>{title ? title : "Popular on Netflix"}</h2>
