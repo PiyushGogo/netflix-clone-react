@@ -7,15 +7,16 @@ import {
   signOut,
 } from "firebase/auth";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import * as Constants from "./constants/constants";
 
 // need to add firebase confi
 const firebaseConfig = {
-  apiKey: "AIzaSyA8BgZv7K9HXRVvQm9LGs61SlEtskkQH9E",
+  apiKey: Constants.FIREBASEAPIKET,
   authDomain: "netflix-clone-7cfa0.firebaseapp.com",
   projectId: "netflix-clone-7cfa0",
   storageBucket: "netflix-clone-7cfa0.appspot.com",
   messagingSenderId: "124075914440",
-  appId: "1:124075914440:web:c630e49f03ba32acf761fd",
+  appId: Constants.FIREBASEAPPID,
 };
 
 const app = initializeApp(firebaseConfig);

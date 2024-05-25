@@ -1,0 +1,2 @@
+export const FIREBASEAPIKET = "AIzaSyA8BgZv7K9HXRVvQm9LGs61SlEtskkQH9E";
+export const FIREBASEAPPID = "1:124075914440:web:c630e49f03ba32acf761fd";
